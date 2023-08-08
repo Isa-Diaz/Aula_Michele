@@ -1,7 +1,7 @@
 #
 # #Lista
 #
-# lista = ["alface", "batata"]
+# lista = ["alface", "batata", "tomate", "feijão"]
 # print(lista)
 #
 # #Dicionario usa dois "componentes" alem de {} e :

@@ -10,14 +10,17 @@
 
 #aula dicionario
 
-carros = {"Jeep Renegade":['R$90.000,00', 'ano = 2018'],
-          "Jeep Compass":'R$150.000,00',
-          "Troller": 'R$200.000,00'}
+carros = {"Jeep Renegade":['R$90.000,00', 'ano = 2020'],
+          "Jeep Compass":['R$150.000,00', 'ano = 2020'],
+          "Troller": ['R$200.000,00', 'ano = 2020']}
 print(carros)
 print(carros['Jeep Renegade'])
 
 #altera o elemento unico da lista
-carros["Jeep Compass"] = 'R$180.000,00'
+#carros["Jeep Compass"] = 'R$180.000,00'
+
+#como possui mais de um elemento devemos definir sua posição:
+carros["Jeep Compass"][0] = 'R$180.000,00'
 print(carros)
 #altera um elemento de varios da lista
 carros["Jeep Renegade"][1] = "ano =2020"
@@ -35,3 +38,9 @@ print(carros)
 #Pesquisar se possui ou não um elemento na tabela
 print("Audi" in carros)
 print("BMW" in carros)
+
+#Imprimir apenas chaves
+print(carros.keys())
+
+#Imprimir apenas valores
+print(carros.values())
